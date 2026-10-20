@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxia Rosa</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <canvas id="estrellas"></canvas>
+
+  <main class="universo">
+    <h1>Nuestra Galaxia</h1>
+    <p class="subtitulo">Un universo lleno de recuerdos</p>
+
+    <section class="escena">
+      <div class="orbita orbita-1"></div>
+      <div class="orbita orbita-2"></div>
+      <div class="orbita orbita-3"></div>
+
+      <div class="corazon">
+        <svg viewBox="0 0 100 100" aria-label="Corazón rosa">
+          <defs>
+            <linearGradient id="rosa" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#ffd6ed"/>
+              <stop offset="50%" stop-color="#ff4fa3"/>
+              <stop offset="100%" stop-color="#c00069"/>
+            </linearGradient>
+          </defs>
+          <path
+            d="M50 88 C40 76 8 55 8 32
+               C8 10 36 5 50 28
+               C64 5 92 10 92 32
+               C92 55 60 76 50 88Z"
+            fill="url(#rosa)"
+            stroke="#ffe0f2"
+            stroke-width="2"
+          />
+        </svg>
+      </div>
+
+      <div id="fotos-orbitando"></div>
+
+    </section>
+
+ <div class="musica">
+  <iframe
+    width="300"
+    height="170"
+    src="musica/music1.mp3"
+    title="Golden Brown - The Stranglers"
+    allow="autoplay; encrypted-media; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<footer>
+  <p class="frase-amor">
+    Si pudiera elegir de nuevo entre todos los universos,
+    volvería a encontrarte en cada uno de ellos.
+    Porque mi lugar favorito no es un sitio,
+    sino donde tu corazón se encuentre con el mío. 💗
+  </p>
+  <p>Para ti, mi estrella eterna ✨</p>
+</footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
